@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
 class Thing(models.Model):
@@ -7,5 +6,3 @@ class Thing(models.Model):
     description = models.TextField(max_length=120,default='', unique=False, blank=True)
     quantity = models.IntegerField(default=0, unique=False)
 
-class User(AbstractUser):
-    x = 0
