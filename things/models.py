@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractUser
 class Thing(models.Model):
     name = models.CharField(max_length=30, default='', unique=True, blank=False)
     description = models.TextField(max_length=120,default='', unique=False, blank=True)
-    quantity = models.IntegerField(default=0, unique=False,range = (0,100))
+    quantity = models.IntegerField(default=0, unique=False)
 
 class User(AbstractUser):
     x = 0
